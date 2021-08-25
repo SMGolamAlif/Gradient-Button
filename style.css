@@ -1,0 +1,84 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+   
+}
+html{
+   background-color: lightgray;
+   position: absolute;
+}
+.div{
+   height: 200px;
+   width: 300px;
+   background-color: lightgray ;
+   position: absolute;
+   text-align: center;
+   left: 50px;
+   top: 100px;
+}
+.div:hover{
+   top:300px;
+   left: 150px;
+   animation:div 5s ease-out 0s 1;
+
+}
+.div:active{
+   top:500px;
+   left: 200px;
+}
+.btn:link,
+.btn:visited{
+   text-decoration: none;
+   border: 2px solid white;
+   background: linear-gradient(-45deg, #A9F1DF,#FFBBBB,#D8B5FF,#FCA5F1,#B5FFFF,#F1EAB9,#FFFFC7,#A890FE,#BFF098);
+	background-size: 700% 700%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+   color: black;
+   text-transform: uppercase;
+   font-size: 15px;
+   padding: 10px 30px;
+   border-radius: 100px;
+   display: inline;
+   text-align: center;
+   position: relative;
+   top:40%;
+   animation: gradient 20s ease-out 0s infinite;
+
+}
+.btn:hover{
+   top:300px;
+   left: 200px;
+}
+.btn:active{
+   top:500px;
+   left:400px;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.ABC{
+   height: 150vh;
+   width: 150vh;
+   background-color: lightgray;
+}
+@keyframes div {
+	0% {
+		top:500px;
+	}
+	50% {
+	   top:700px;
+	}
+	100% {
+		top: 900px;
+	}
+}
